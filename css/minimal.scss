@@ -46,61 +46,73 @@ a {
 h1 {
     font-size: 2.5rem;
     font-family: 'DM Sans', sans-serif;
+    font-weight: normal;   
 }
 
 h2 {
     font-size: 2rem;
     font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
 }
 
 h3 {
     font-size: 1.375rem;
     font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
 }
 
 h4 {
     font-size: 1.125rem;
     font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
 }
 
 h5 {
     font-size: 1rem;
     font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
 }
 
 h6 {
     font-size: 0.875rem;
     font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
 }
 
 .h1 {
     font-size: 2.5rem;
     font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
 }
 
 .h2 {
     font-size: 2rem;
     font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
 }
 
 .h3 {
     font-size: 1.375rem;
     font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
 }
 
 .h4 {
     font-size: 1.125rem;
     font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
 }
 
 .h5 {
     font-size: 1rem;
     font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
 }
 
 .h6 {
     font-size: 0.875rem;
     font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
 }
 
 p {
@@ -504,6 +516,7 @@ $light: #F1F3F4;
     color: #414141;
     cursor: pointer;
     font-family: 'DM Sans', sans-serif;
+    margin-bottom: 1.25rem;
 }
 .button:hover, .button:active {
     background: #ddd;
@@ -553,7 +566,7 @@ textarea {
 
 /*CODE*/
 code {
-    padding: 0.4rem;
+    padding: 0.4rem 2rem;
     background: #444;
     color: #fff;
     border: 1px solid #222;
@@ -561,7 +574,22 @@ code {
     display: block;
     text-align: left;
     font-family: monospace;
+    overflow-x: auto;
+}
+pre {
+    margin: 0;
 }
 pre > code {
     white-space: pre;
+}
+
+hr {
+    border: 0.4px solid #eee;
+}
+
+/*LISTS*/
+
+ul {
+    list-style: circle inside;
+    margin-bottom: 1.25rem;
 }
