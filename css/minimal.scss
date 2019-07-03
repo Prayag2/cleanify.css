@@ -1,6 +1,7 @@
 // font
 @import url('https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
 
 // Universal
 
@@ -18,7 +19,12 @@ body {
 /* ROOT FONT STYLES */
 a {
     text-decoration: none;
+    color: #222;
+    &:active, &:hover {
+        color: #4285F4;
+    }
 }
+
 * {
     font-family: 'Encode Sans Semi Expanded', sans-serif;
     color: #202124;
@@ -111,13 +117,6 @@ p {
     font-weight: 700;
 }
 
-code {
-    padding: 1rem;
-    background: #444;
-    color: #fff;
-    border-radius: 4px;
-}
-
 /* POSITIONING */
 
 .left {
@@ -144,7 +143,7 @@ $red: #EA4335;
 $blue: #185abc;
 $green: #34A853;
 $yellow: #FBBC05;
-$black: #202124;
+$black: #333;
 $light: #F1F3F4;
 
 /*Colors*/
@@ -388,7 +387,6 @@ $light: #F1F3F4;
     width: 100%;
     display: flex;
     justify-content: left;
-    margin-top: 1rem;
     min-height: 1px;
     .col {
         position: relative;
@@ -472,13 +470,98 @@ $light: #F1F3F4;
             max-width: 100%;
             display: block;
             margin-right: 0;
-            margin-top: 1.5rem;
         }
         [class*='col-'] {
             margin-right: 0;
-            margin-top: 1.5rem;
             min-width: 100%;
             max-width: 100%;
         }
     }
+}
+/*utilities*/
+
+.full-width {
+    width: 100%;
+}
+.half-width {
+    width: 50%;
+}
+.max-width {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+/*buttons*/
+
+.button {
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 30px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    background: #eee;
+    color: #414141;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+}
+.button:hover, .button:active {
+    background: #ddd;
+    color: #414141;
+}
+.button-primary {
+    background: #4285F4;
+    border-color: #185abc;
+    color: #fff;
+}
+.button-primary:hover, .button-primary:active {
+    background: #185abc;
+    color: $light;
+}
+
+/*FORM*/
+
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea {
+    padding: 8px 16px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    background: #fff;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 1.25rem;
+}
+input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, textarea:focus {
+    border-color: #4285F4;
+    color: #4285F4;
+}
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+textarea {
+    min-height: 100px;
+    height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.label-checkbox {
+    float: right;
+}
+
+/*CODE*/
+code {
+    padding: 0.4rem;
+    background: #444;
+    color: #fff;
+    border: 1px solid #222;
+    border-radius: 4px;
+    display: block;
+    text-align: left;
+    font-family: monospace;
+}
+pre > code {
+    white-space: pre;
 }

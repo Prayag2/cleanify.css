@@ -1,0 +1,5 @@
+@media (min-width: 768px) {
+  .grid-example [class*='col-'] {
+    margin-bottom: 0.75rem;
+  }
+}

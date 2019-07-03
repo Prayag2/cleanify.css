@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Minimal CSS</title>
-  
+
   <!-- stylesheets -->
-  <link rel="stylesheet" href="css/">
+  <link rel="stylesheet" href="css/minimal.css">
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
@@ -23,73 +24,160 @@
     <br>
     <br>
   </div>
-  <div class="sm-container bg-yellow center">
+  <div class="sm-container center" style="padding: 1rem; border: 1px solid #ddd; border-radius: 4px; background: #eee;">
     <h1 class="blue">The Grid System</h1>
-    <div class="row">
-      <div class="col-1 bg-red pt-1 pb-1 light">col-1</div>
-      <div class="col-1 bg-red pt-1 pb-1 light">col-1</div>
-      <div class="col-1 bg-red pt-1 pb-1 light">col-1</div>
-      <div class="col-1 bg-red pt-1 pb-1 light">col-1</div>
-      <div class="col-1 bg-red pt-1 pb-1 light">col-1</div>
-      <div class="col-1 bg-red pt-1 pb-1 light">col-1</div>
-      <div class="col-1 bg-red pt-1 pb-1 light">col-1</div>
-      <div class="col-1 bg-red pt-1 pb-1 light">col-1</div>
-      <div class="col-1 bg-red pt-1 pb-1 light">col-1</div>
-      <div class="col-1 bg-red pt-1 pb-1 light">col-1</div>
-      <div class="col-1 bg-red pt-1 pb-1 light">col-1</div>
-      <div class="col-1 bg-red pt-1 pb-1 light">col-1</div>
+    <div class="grid-example">
+      <div class="row">
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-1 pt-1 pb-1 black">col-1
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-1 pt-1 pb-1 black">col-1
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-1 pt-1 pb-1 black">col-1
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-1 pt-1 pb-1 black">col-1
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-1 pt-1 pb-1 black">col-1
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-1 pt-1 pb-1 black">col-1
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-1 pt-1 pb-1 black">col-1
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-1 pt-1 pb-1 black">col-1
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-1 pt-1 pb-1 black">col-1
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-1 pt-1 pb-1 black">col-1
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-1 pt-1 pb-1 black">col-1
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-1 pt-1 pb-1 black">col-1
+        </div>
+      </div>
+      <div class="row">
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-2 pt-1 pb-1 black">col-2
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-2 pt-1 pb-1 black">col-2
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-2 pt-1 pb-1 black">col-2
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-2 pt-1 pb-1 black">col-2
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-2 pt-1 pb-1 black">col-2
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-2 pt-1 pb-1 black">col-2
+        </div>
+      </div>
+      <div class="row">
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-3 pt-1 pb-1 black">col-3
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-3 pt-1 pb-1 black">col-3
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-3 pt-1 pb-1 black">col-3
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-3 pt-1 pb-1 black">col-3
+        </div>
+      </div>
+      <div class="row">
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-4 pt-1 pb-1 black">col-4
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-4 pt-1 pb-1 black">col-4
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-4 pt-1 pb-1 black">col-4
+        </div>
+      </div>
+      <div class="row">
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-5 pt-1 pb-1 black">col-5
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-5 pt-1 pb-1 black">col-5
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-2 pt-1 pb-1 black">col-2
+        </div>
+      </div>
+      <div class="row">
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-6 pt-1 pb-1 black">col-6
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-6 pt-1 pb-1 black">col-6
+        </div>
+      </div>
+      <div class="row">
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-7 pt-1 pb-1 black">col-7
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-5 pt-1 pb-1 black">col-5
+        </div>
+      </div>
+      <div class="row">
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-8 pt-1 pb-1 black">col-8
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-4 pt-1 pb-1 black">col-4
+        </div>
+      </div>
+      <div class="row">
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-9 pt-1 pb-1 black">col-9
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-3 pt-1 pb-1 black">col-3
+        </div>
+      </div>
+      <div class="row">
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-10 pt-1 pb-1 black">col-10
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-2 pt-1 pb-1 black">col-2
+        </div>
+      </div>
+      <div class="row">
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-11 pt-1 pb-1 black">col-11
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-1 pt-1 pb-1 black">col-1
+        </div>
+      </div>
+      <div class="row">
+        <div style="border: 1px solid #ddd; border-radius: 4px; background: #fff;" class="col-12 pt-1 pb-1 black">col-12
+        </div>
+      </div>
     </div>
-    <div class="row">
-      <div class="col-2 bg-red pt-1 pb-1 light">col-2</div>
-      <div class="col-2 bg-red pt-1 pb-1 light">col-2</div>
-      <div class="col-2 bg-red pt-1 pb-1 light">col-2</div>
-      <div class="col-2 bg-red pt-1 pb-1 light">col-2</div>
-      <div class="col-2 bg-red pt-1 pb-1 light">col-2</div>
-      <div class="col-2 bg-red pt-1 pb-1 light">col-2</div>
-    </div>
-    <div class="row">
-      <div class="col-3 bg-red pt-1 pb-1 light">col-3</div>
-      <div class="col-3 bg-red pt-1 pb-1 light">col-3</div>
-      <div class="col-3 bg-red pt-1 pb-1 light">col-3</div>
-      <div class="col-3 bg-red pt-1 pb-1 light">col-3</div>
-    </div>
-    <div class="row">
-      <div class="col-4 bg-red pt-1 pb-1 light">col-4</div>
-      <div class="col-4 bg-red pt-1 pb-1 light">col-4</div>
-      <div class="col-4 bg-red pt-1 pb-1 light">col-4</div>
-    </div>
-    <div class="row">
-      <div class="col-5 bg-red pt-1 pb-1 light">col-5</div>
-      <div class="col-5 bg-red pt-1 pb-1 light">col-5</div>
-      <div class="col-2 bg-red pt-1 pb-1 light">col-2</div>
-    </div>
-    <div class="row">
-      <div class="col-6 bg-red pt-1 pb-1 light">col-6</div>
-      <div class="col-6 bg-red pt-1 pb-1 light">col-6</div>
-    </div>
-    <div class="row">
-      <div class="col-7 bg-red pt-1 pb-1 light">col-7</div>
-      <div class="col-5 bg-red pt-1 pb-1 light">col-5</div>
-    </div>
-    <div class="row">
-      <div class="col-8 bg-red pt-1 pb-1 light">col-8</div>
-      <div class="col-4 bg-red pt-1 pb-1 light">col-4</div>
-    </div>
-    <div class="row">
-      <div class="col-9 bg-red pt-1 pb-1 light">col-9</div>
-      <div class="col-3 bg-red pt-1 pb-1 light">col-3</div>
-    </div>
-    <div class="row">
-      <div class="col-10 bg-red pt-1 pb-1 light">col-10</div>
-      <div class="col-2 bg-red pt-1 pb-1 light">col-2</div>
-    </div>
-    <div class="row">
-      <div class="col-11 bg-red pt-1 pb-1 light">col-11</div>
-      <div class="col-1 bg-red pt-1 pb-1 light">col-1</div>
-    </div>
-    <div class="row">
-      <div class="col-12 bg-red pt-1 pb-1 light">col-12</div>
-    </div>
+  </div>
+  <div class="sm-container center">
+    <h1 class="blue">Buttons</h1>
+    <a href="#" class="button">Anchor Button</a>
+    <button class="button">Button Element</button>
+    <input type="submit" class="button" value="Submit Input">
+    <input type="button" class="button" value="Button Input">
+    <br>
+    <br>
+    <a href="#" class="button button-primary">Anchor Button</a>
+    <button class="button button-primary">Button Element</button>
+    <input type="submit" class="button button-primary" value="Submit Input">
+    <input type="button" class="button button-primary" value="Button Input">
+    <br>
+    <br>
+    <h1 class="blue">Forms</h1>
+    <br>
+    <form class="left">
+      <div class="row">
+        <div class="col-6">
+          <label for="fname">First Name</label>
+          <input class="full-width" type="text" id="fname" placeholder="First Name">
+        </div>
+        <div class="col-6">
+          <label for="lname">Last Name</label>
+          <input class="full-width" type="text" id="lname" placeholder="Last Name">
+        </div>
+      </div>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="person@example.com">
+      <label for="msg">Message</label>
+      <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Type your message here"></textarea>
+      <input type="submit" class="button button-primary">
+      <label class="label-checkbox">
+        <input type="checkbox">
+        <span>I would like to get emails related to this</span>
+      </label>
+    </form>
+    <br>
+    <pre>
+    <code>
+      
+    </code>
+  </pre>
   </div>
 </body>
 
