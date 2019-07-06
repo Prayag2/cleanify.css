@@ -4,7 +4,9 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
 
 // Universal
-
+html {
+    font-size: 63%;
+}
 html,
 body {
     height: 100%;
@@ -589,15 +591,17 @@ hr {
 }
 
 /*LISTS*/
-
 ul {
     list-style: circle inside;
-    margin-bottom: 1.25rem;
+}
+ul, ol {
+    margin-bottom: 0.5rem;
     padding-left: 0;
     li {
-        ul {
-            margin-left: 1rem;
-            margin-bottom: 0;
+        margin-bottom: 0.5rem;
+        ul, ol {
+            margin-top: 0.6rem;
+            margin-left: 1.5rem;
         }
     }
 }
