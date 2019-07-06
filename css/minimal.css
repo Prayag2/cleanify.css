@@ -483,5 +483,8 @@ ul {
   list-style: circle inside;
   margin-bottom: 1.25rem;
   padding-left: 0; }
+  ul li ul {
+    margin-left: 1rem;
+    margin-bottom: 0; }
 
 /*# sourceMappingURL=minimal.css.map */
