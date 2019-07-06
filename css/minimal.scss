@@ -510,7 +510,7 @@ $light: #F1F3F4;
     height: 42px;
     line-height: 42px;
     padding: 0 30px;
-    border: 1px solid #bbb;
+    border: none;
     border-radius: 4px;
     background: #eee;
     color: #414141;
@@ -520,16 +520,17 @@ $light: #F1F3F4;
 }
 .button:hover, .button:active {
     background: #ddd;
+    box-shadow: 0 0 10px #ddd;
     color: #414141;
 }
 .button-primary {
-    background: #4285F4;
-    border-color: #185abc;
+    background: #8C52FF;
     color: #fff;
 }
 .button-primary:hover, .button-primary:active {
-    background: #185abc;
     color: $light;
+    background: #6a1fff;
+    box-shadow: 0 0 10px #6a1fff;
 }
 
 /*FORM*/
@@ -543,9 +544,9 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
     font-family: 'DM Sans', sans-serif;
     margin-bottom: 1.25rem;
 }
-input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, textarea:focus {
-    border-color: #4285F4;
-    color: #4285F4;
+input[type="email"]:hover, input[type="number"]:hover, input[type="search"]:hover, input[type="text"]:hover, input[type="tel"]:hover, input[type="url"]:hover, input[type="password"]:hover, textarea:hover, input[type="email"]:active, input[type="number"]:active, input[type="search"]:active, input[type="text"]:active, input[type="tel"]:active, input[type="url"]:active, input[type="password"]:active, textarea:active, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, textarea:focus {
+    border-color: #fff;
+    box-shadow: 0 0 10px #bbb;
 }
 label {
     display: block;
@@ -592,4 +593,8 @@ hr {
 ul {
     list-style: circle inside;
     margin-bottom: 1.25rem;
+    padding-left: 0;
+    li {
+        
+    }
 }
