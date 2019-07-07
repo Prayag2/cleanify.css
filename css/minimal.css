@@ -389,7 +389,10 @@ p {
     .row [class*='col-'] {
       margin-right: 0;
       min-width: 100%;
-      max-width: 100%; } }
+      max-width: 100%; } 
+    .label-checkbox {
+      float: none; }
+    }
 /*utilities*/
 .full-width {
   width: 100%; }
